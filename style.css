@@ -1,0 +1,167 @@
+body {
+    font-size: 15pt;
+    background: whitesmoke;
+    position: relative;
+}
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+select{
+  width: 80%;
+  height: 10%;
+}
+.input {
+  width: 180px;
+  height: 50px;
+  border-radius: 10%;
+  background: whitesmoke;
+  font-size: 12pt;
+  margin: 5px;
+  }
+.select{
+    width: 110px;
+    height: 40px;
+    border-radius: 5%;
+  }
+#t_c{
+  position: relative;
+  width: 80pt;
+  height: 40pt;
+}
+#sel{
+  position: relative;
+  top: 20%;
+  text-align: center;
+}
+.head{
+  position: fixed;
+  top:1%;
+  left: 0%;
+  width: 100%;
+  height: 20%;
+  background: red;
+  text-align: center;
+}
+#content{
+  position: fixed;
+  top: 22%;
+  left: 1.5%;
+  padding-left:2%;
+  width: 95%;
+  height: 67%;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+.head p{
+  width: 100%;
+  height: 40%;
+  font-size: 25pt;
+  background: orangered;
+}
+.navMenu{
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: red;
+  height: 10%;
+  bottom: 0.5%;
+  left: 0%;
+}
+.qft{
+  width: 300pt;
+}
+#selected_equation{
+  text-align: center;
+}
+#selected_equation input{
+  width: 10%;
+}
+#selected_equation button{
+  position: relative;
+}
+#select_equation{
+  display: none;
+  text-align: center;
+}
+#select_equation input{
+  width: 80%;
+}
+.buttonb{
+  border: 1px solid black;
+  background: ghostwhite;
+}
+button{
+  position: fixed;
+  width: 30%;
+  height: 10%;
+  border: 0.1px solid orangered;
+  background: rgba(255, 0, 0, 1);
+  font-size: 100%;
+}
+#equations{
+  left: 1%;
+}
+#learn{
+  left:35%;
+  height: 10%;
+}
+#more{
+  left:69%;
+}
+#solution{
+  text-align: center;
+  font-size: 13pt;
+}
+#more_c button{
+  position: relative;
+  top: 10pt;
+  width: 20%;
+  height: 50pt;
+}
+#more_cc button{
+  position: relative;
+  top: 10pt;
+  width: 20%;
+  height: 50pt;
+}
+
+#more_t button{
+  position: relative;
+  top: 10pt;
+  width: 20%;
+  height: 50pt;
+}
+
+#more_c, #more_t, #more_cc{
+  display: flex;
+  justify-content: space-around;
+  align-items: content;
+}
+.base{
+  text-align: center;
+}
+.base button{
+  position: relative;
+  width: 60%;
+  height: 50pt;
+  margin-bottom: 2pt;
+  background: red;
+  border: 2pt solid red;
+}
+strong{
+  border:2px solid black;
+  padding: 2pt;
+}
+.base input{
+  width: 45pt;
+  height: 35pt;
+  margin: 1px;
+  font-size: 20pt;
+}
+.base sub input{
+  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+  font-size: 10pt;
+}

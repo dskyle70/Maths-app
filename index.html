@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+<script src="https://cdnjs.cloudfare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="head">
+    <p>M±ths GX</p>
+  </div>
+  
+  <section id="content">
+    <h2>Equation Solver</h2>
+    <p>Solve different kinds of <b>equations</b> and view <b>solutions</b> for each answer gotten</p>
+  <b class="buttonb" onclick="document.getElementById('select_equation').style.display='block'">Click to select equation type</b>
+<div id="select_equation" onclick="document.getElementById('select_equation').style.display='none'">
+    <input type="button" value="Simple Linear Equations" onclick="select_equation('simple')"><br>
+    <input type="button" value="Quadratic Equations" onclick="select_equation('quadratic')"><br>
+    <input type="button" value="Simultaneous Linear Equations" onclick="select_equation('simultaneous')"><br>
+    <input type="button" value="Simultaneous Linear Triples" onclick="select_equation('triple')"><br>
+    <input type="button" value="Cubic Polynomials" onclick="select_equation('polynomial')"><br>
+</div>
+
+
+    <!--Selected Equation-->
+<div id="selected_equation">
+      <p>ax+b=c</p>
+<p><input type="number" id="a">x+<input type="number" id="b">=<input type="number" id="c"></p>
+<button onclick="solve('simple')" id="solve">Solve</button>
+<hr>
+<p>x=<span id="x"></span></p><hr></div>
+<p>Solution</p><hr>
+<div id="solution">
+    </div>
+    </section>
+  <!--Navigation Menus-->
+  <div class="navMenu">
+    <button id="equations" onclick="change_content('c_equation')">X?</button>
+    <button id="learn" onclick="change_content('learn')">LEARN</button>
+    <button id="more" onclick="change_content('more')">…</button>
+  </div>
+  <script src="main.js" ></script>
+</body>
+</html>

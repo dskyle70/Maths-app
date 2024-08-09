@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+  *{
+    background: blue;
+    text-align: center;
+  }
+  .display-box{
+    position: fixed;
+    width: 99%;
+    height:30%;
+    left:1px;
+    top:0;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid lime;
+  }
+    .disp-only{
+      position: relative;
+    }
+    .display{
+      position: relative;
+      background: red;
+      height: 70%;
+    }
+    #caret{
+      position: absolute;
+      background: white;
+      font-size: 50pt;
+    }
+    .calc-keys{
+      position: fixed;
+      left:2px;
+      width:99%;
+      height:70%;
+      margin:0 auto;
+      top:30%;
+      background: darkgray;
+    }
+  </style>
+  <title>Standard Calculator</title>
+</head>
+<body>
+  <div class="display-box">
+  <div class="disp-only">
+  <div id="display"></div>
+  <div id="caret">|</div>
+  </div>
+  <div id="answer"></div>
+  </div>
+  <div class="calc-keys">
+    
+  </div>
+</body>
+</html>
