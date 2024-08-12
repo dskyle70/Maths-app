@@ -15,7 +15,7 @@ const more=`
 <button onclick="change_content('mass')">kg</button>
 </div><br>
 
-<div id="more_cc">
+<div id="more_c">
 <button onclick="change_content('pressure')">atm</button>
 <button onclick="change_content('area')">sq.m</button>
 <button onclick="change_content('volume')">l<sup>3</sup></button>
@@ -23,11 +23,48 @@ const more=`
 
 <h2>TOOLS</h2>
 <div id="more_t">
-<button onclick="change_content('calculator')">±</button>
+<button onclick="change_content('geometry')">l x b</button>
 <button onclick="change_content('base')">010</button>
-<button>x<sup>2</sup></button>
+<button onclick="change_content('formulas')">formulas</button>
 
 </div>
+`;
+const geometry=`
+  <h2>Geometry</h2>
+  <h3>Two Dimensions Shapes</h3>
+  <p>Two-dimensional (2D) shapes are flat figures that 
+  exist on a plane and have only two dimensions: length and width. 
+  They lack any thickness or depth. Here are some examples of 2D shapes:</p>
+  <ol>
+    <li><b>Circle:</b> A curved shape with no corners or edges.</li>
+    <li><b>Triangle:</b> It has three straight sides, three angles, and three vertices.</li>
+    <li><b>Square:</b> Four equal sides, each measuring 90°, and four vertices.</li>
+    <li><b>Rectangle:</b> Four sides, four vertices, and opposite sides parallel.</li>
+    <li><b>Parallelogram:</b> Two pairs of parallel sides.</li>
+    <li><b>Rhombus:</b> All sides are equal in length.</li>
+    <li><b>Trapezoid:</b> Four sides with one pair of opposite sides parallel.</li>
+    <li><b>Kite:</b> Four sides grouped into two pairs of equal adjacent sides.</li>
+    <li><b>Semi-Circle:</b> Half of a circle formed by a diameter.</li>
+  </ol>
+  <h3>below are the properties and formulas for calculating the perimeters and areas of the shapes listed above</h3>
+ <ol>
+    <li><b>Circle:</b>
+      <p>Radius (r): The distance from the center to any point on the circle.<br><br>
+         Diameter (d): Twice the radius (i.e., (d = 2r)).<br><br>
+         Circumference (C): The total length around the circle. 
+                            (C = 2 x π x r = 2πr) (where (π) is approximately 3.14159).<br><br>
+        Area (A): The space enclosed by the circle. 
+                                (A = π x r<sup>2</sup> = πr<sup>2</sup>).<br></p> </li>
+    <li><b>Triangle:</b> </li>
+    <li><b>Square:</b> Four equal sides, each measuring 90°, and four vertices.</li>
+    <li><b>Rectangle:</b> Four sides, four vertices, and opposite sides parallel.</li>
+    <li><b>Parallelogram:</b> Two pairs of parallel sides.</li>
+    <li><b>Rhombus:</b> All sides are equal in length.</li>
+    <li><b>Trapezoid:</b> Four sides with one pair of opposite sides parallel.</li>
+    <li><b>Kite:</b> Four sides grouped into two pairs of equal adjacent sides.</li>
+    <li><b>Semi-Circle:</b> Half of a circle formed by a diameter.</li>
+  </ol>
+
 `;
 const base=`
 <div class="base"><br>
@@ -737,8 +774,8 @@ function change_content(n_content){
     case 'base_equation_n':
       content.innerHTML=base_equation_n;
       break;
-    case 'calculator':
-      content.innerHTML=calculator;
+    case 'geometry':
+      content.innerHTML=geometry;
       break;
   }
   content.innerHTML+=`<br>`;

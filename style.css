@@ -61,8 +61,10 @@ select{
 }
 .navMenu{
   position: fixed;
-  display: block;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
   background: red;
   height: 10%;
   bottom: 0.5%;
@@ -99,16 +101,14 @@ button{
   background: rgba(255, 0, 0, 1);
   font-size: 100%;
 }
-#equations{
-  left: 1%;
+#equations, #more, #calculator{
+  text-transform: capitalize;
+  position: relative;
+  display: block;
+  height: 100%;
+  border: 1px solid black;
 }
-#learn{
-  left:35%;
-  height: 10%;
-}
-#more{
-  left:69%;
-}
+
 #solution{
   text-align: center;
   font-size: 13pt;
@@ -119,22 +119,17 @@ button{
   width: 20%;
   height: 50pt;
 }
-#more_cc button{
-  position: relative;
-  top: 10pt;
-  width: 20%;
-  height: 50pt;
-}
 
 #more_t button{
   position: relative;
   top: 10pt;
-  width: 20%;
+  width: 25%;
   height: 50pt;
 }
 
-#more_c, #more_t, #more_cc{
+#more_c, #more_t{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: content;
 }
