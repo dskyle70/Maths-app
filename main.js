@@ -49,12 +49,12 @@ const geometry=`
   <h3>below are the properties and formulas for calculating the perimeters and areas of the shapes listed above</h3>
  <ol>
     <li><b>Circle:</b>
-      <p>Radius (r): The distance from the center to any point on the circle.<br><br>
-         Diameter (d): Twice the radius (i.e., (d = 2r)).<br><br>
-         Circumference (C): The total length around the circle. 
-                            (C = 2 x π x r = 2πr) (where (π) is approximately 3.14159).<br><br>
-        Area (A): The space enclosed by the circle. 
-                                (A = π x r<sup>2</sup> = πr<sup>2</sup>).<br></p> </li>
+      <ul><li>Radius (r): The distance from the center to any point on the circle.</li><br><br>
+         <li>Diameter (d): Twice the radius (i.e., (d = 2r)).<br><br>
+         <li>Circumference (C): The total length around the circle. 
+                            (C = 2 x π x r = 2πr) (where (π) is approximately 3.14159).</li><br><br>
+         <li>Area (A): The space enclosed by the circle. 
+                                (A = π x r<sup>2</sup> = πr<sup>2</sup>)</li>.<br></ul> </li>
     <li><b>Triangle:</b> </li>
     <li><b>Square:</b> Four equal sides, each measuring 90°, and four vertices.</li>
     <li><b>Rectangle:</b> Four sides, four vertices, and opposite sides parallel.</li>
